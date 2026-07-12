@@ -48,6 +48,7 @@
   .box .hint{font-size:.7rem;color:var(--ink-dim);font-family:var(--mono)}
   .box.apt .name{color:var(--cyan)}
   .box.mal .name{color:var(--amber)}
+  .box.sec .name{color:#8fce6b}
 
   /* results */
   #results{margin-top:34px}
@@ -87,6 +88,9 @@
   <h2><span class="tick">▸</span> APT by geolocation</h2>
   <div class="grid" id="aptGrid"></div>
 
+  <h2><span class="tick">▸</span> Malware by targeted sector</h2>
+  <div class="grid" id="secGrid"></div>
+
   <div id="results"></div>
 </div>
 
@@ -117,6 +121,21 @@ const APT = [
   ["Pakistan","Transparent Tribe"],
 ];
 
+const SECTORS = [
+  ["Financial","financial sector malware"],
+  ["Banking","banking sector"],
+  ["Healthcare","healthcare sector"],
+  ["Energy","energy sector"],
+  ["Government","government sector"],
+  ["Defense","defense industrial base"],
+  ["Telecom","telecommunications sector"],
+  ["Manufacturing","manufacturing sector"],
+  ["Education","education sector"],
+  ["Retail","retail sector"],
+  ["Aviation","aviation sector"],
+  ["Critical Infra","critical infrastructure"],
+];
+
 const $ = s => document.querySelector(s);
 let apiKey = "";
 
@@ -139,6 +158,7 @@ function buildGrid(id, items, cls, hint) {
 }
 buildGrid("#malGrid", MALWARE, "mal", "q");
 buildGrid("#aptGrid", APT, "apt", "adversary");
+buildGrid("#secGrid", SECTORS, "sec", "sector");
 
 async function runSearch(label, query, btn) {
   document.querySelectorAll(".box.active").forEach(x => x.classList.remove("active"));
@@ -191,4 +211,3 @@ function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":
 </script>
 </body>
 </html>
- 
