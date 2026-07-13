@@ -1,7 +1,7 @@
-# Simplified OTX Portal 
-To quickly query Alienvault from the comfort of your bed, on your phone, using your thumb. 
+# Simplified CTI Portal 
+To quickly query Alienvault and VirusTotal from the comfort of your bed, on your phone, using your thumb. 
 
-Ideal for: busy parents whose children barely nap, as well as anyone else who needs to keep abreast of APTs and malware intel while also being really tired or otherwise pressed for time.
+Ideal for: busy parents whose children barely sleep, as well as anyone else who needs to do a little intel while also being really tired or otherwise pressed for time.
 
 ************************
 Busy people, unite!
@@ -16,7 +16,7 @@ The portal was built with assistance from Claude for personal Fable use case tes
 
 i have not yet completed a security audit of the code in this project, though i intend to get to that as soon as i can. 
 
-*upcoming adjustments*: will most likely swap the sections around so the two malware portions are next to each other for improved UX, as well as any other little useful changes.
+*upcoming adjustments*: will most likely swap the OTX sections around so the two malware portions are next to each other for improved UX, as well as any other little useful changes.
 
 bring your own api key, feel free to dig through. Feedback welcome.
 
