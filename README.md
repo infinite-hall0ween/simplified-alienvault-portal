@@ -14,11 +14,12 @@ Addenda:
 
 The portal was built with assistance from Claude for personal Fable use case testing and to derive an efficient solution for the way i currently use alienvault. 
 
-i have not yet completed a security audit of the code in this project, though i intend to get to that as soon as i can. 
+i have not yet completed a security audit of the code in this project, though i intend to get to that as soon as i can. Dependabot and private vuln. report sharing enabled in the interim.
 
 *upcoming adjustments*: will most likely swap the OTX sections around so the two malware portions are next to each other for improved UX, as well as any other little useful changes.
 
-bring your own api key, feel free to dig through. Feedback welcome.
+bring your own api keys and have a good time 🧡
+⁠☞ Feedback welcome ☜ 
 
 
 URL:
